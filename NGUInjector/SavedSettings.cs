@@ -240,6 +240,7 @@ namespace NGUInjector
             _yggSwapThreshold = other.YggSwapThreshold;
             _moreBlockParry = other.MoreBlockParry;
             _specialBoostBlacklist = other.SpecialBoostBlacklist;
+            _yggHarvestEarly = other.YggHarvestEarly;
             _blacklistedBosses = other.BlacklistedBosses;
         }
 
