@@ -1353,7 +1353,13 @@ namespace NGUInjector
             if (_initializing) return;
             Main.Settings.YggSwapThreshold = decimal.ToInt32(YggSwapThreshold.Value);
         }
-
+        
+        private void YggHarvestEarly_CheckedChanged(object sender, EventArgs e)
+        {
+            if (_initializing) return;
+            Main.Settings.YggHarvestEarly = YggdrasilHarvestEarly.Checked;
+        }
+        
         private void MoreBlockParry_CheckedChanged(object sender, EventArgs e)
         {
             if (_initializing) return;
