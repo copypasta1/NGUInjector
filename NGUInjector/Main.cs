@@ -254,6 +254,7 @@ namespace NGUInjector
                         DisableOverlay = false,
                         OptimizeITOPODFloor = false,
                         YggSwapThreshold = 1,
+                        YggHarvestEarly = false,
                         UpgradeDiggers = true
                     };
 
