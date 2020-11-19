@@ -90,6 +90,7 @@ namespace NGUInjector
         [SerializeField] private bool _adventureTargetItopod;
         [SerializeField] private bool _disableOverlay;
         [SerializeField] private int _yggSwapThreshold;
+        [SerializeField] private bool _yggHarvestEarly;
         [SerializeField] private bool _moreBlockParry;
         [SerializeField] private int[] _specialBoostBlacklist;
         [SerializeField] private int[] _blacklistedBosses;
@@ -238,6 +239,7 @@ namespace NGUInjector
             _disableOverlay = other.DisableOverlay;
             _upgradeDiggers = other._upgradeDiggers;
             _yggSwapThreshold = other.YggSwapThreshold;
+            _yggHarvestEarly = other.YggHarvestEarly;
             _moreBlockParry = other.MoreBlockParry;
             _specialBoostBlacklist = other.SpecialBoostBlacklist;
             _blacklistedBosses = other.BlacklistedBosses;
@@ -1070,6 +1072,17 @@ namespace NGUInjector
             {
                 if (value == _yggSwapThreshold) return;
                 _yggSwapThreshold = value;
+                SaveSettings();
+            }
+        }
+        
+        public bool YggHarvestEarly
+        {
+            get => _yggHarvestEarly;
+            set
+            {
+                if (value == _yggHarvestEarly) return;
+                _yggHarvestEarly = value;
                 SaveSettings();
             }
         }
