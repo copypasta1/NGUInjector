@@ -79,6 +79,7 @@
             this.ManageMagic = new System.Windows.Forms.CheckBox();
             this.ManageEnergy = new System.Windows.Forms.CheckBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.YggdrasilHarvestEarly = new System.Windows.Forms.CheckBox();
             this.YggSwapThreshold = new System.Windows.Forms.NumericUpDown();
             this.label28 = new System.Windows.Forms.Label();
             this.HarvestSafety = new System.Windows.Forms.CheckBox();
@@ -596,7 +597,8 @@
             this.ManageEnergy.CheckedChanged += new System.EventHandler(this.ManageEnergy_CheckedChanged);
             // 
             // tabPage3
-            // 
+            //
+            this.tabPage3.Controls.Add(this.YggdrasilHarvestEarly);
             this.tabPage3.Controls.Add(this.YggSwapThreshold);
             this.tabPage3.Controls.Add(this.label28);
             this.tabPage3.Controls.Add(this.HarvestSafety);
@@ -613,6 +615,13 @@
             resources.ApplyResources(this.tabPage3, "tabPage3");
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // YggdrasilHarvestEarly
+            // 
+            resources.ApplyResources(this.YggdrasilHarvestEarly, "YggdrasilHarvestEarly");
+            this.YggdrasilHarvestEarly.Name = "YggdrasilHarvestEarly";
+            this.YggdrasilHarvestEarly.UseVisualStyleBackColor = true;
+            this.YggdrasilHarvestEarly.CheckedChanged += new System.EventHandler(this.YggHarvestEarly_CheckedChanged);
             // 
             // YggSwapThreshold
             // 
@@ -1898,6 +1907,7 @@
         private System.Windows.Forms.NumericUpDown YggSwapThreshold;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.CheckBox MoreBlockParry;
+        private System.Windows.Forms.CheckBox YggdrasilHarvestEarly;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.ListBox BlacklistedBosses;
         private System.Windows.Forms.Label label31;
